@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=500, initial-scale=0.01">
+<style>
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+a:visited {color: blue}
+
+
+#navBar1 {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  height: 160px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #3366cc;
+  z-index: 999;
+}
+
+#navBar1>li {
+  float: right;
+  position: relative;
+  right: 50px;
+}
+
+#navBar1 a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Georgia;
+  color: white;
+  background-color: #3366cc;
+}
+
+.toprow {
+  height: 80px;
+  width: 100%;
+  background: #3366cc;
+  padding: 0px 0px 0px 0px;
+}
+
+input.MyButtonName {
+width: 300px;
+padding: 10px;
+font-weight: bold;
+font-size: 110%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+position: absolute;
+top: 15px;
+left: 16px;
+}
+input.MyButtonName:hover {
+color: #000;
+background: ;
+border: 1px solid #3366cc;
+border-radius: 10px;
+}
+
+input.MyButtonTeachingPortfolio {
+width: 200px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+position: absolute;
+top: 20px;
+right: 0px;
+}
+input.MyButtonTeachingPortfolio:hover {
+color: #000;
+background: ;
+border: 1px solid #3366cc;
+border-radius: 10px
+}
+
+.bottomrow {
+  height: 80px;
+  width: 100%;
+  background: #808080;
+  padding: 0px 0px 0px 0px;
+}
+
+input.MyButtonTeachingStatement {
+width: 250px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #808080;
+color: #000000;
+border: 1px solid #808080;
+border-radius: 10px;
+position: absolute;
+top: 100px;
+right: 1100px;
+text-align: center
+}
+input.MyButtonTeachingStatement:hover {
+color: #000;
+background: ;
+border: 1px solid #808080;
+border-radius: 10px
+}
+
+input.MyButtonTeachingMentorship {
+width: 250px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #808080;
+color: #fff;
+border: 1px solid #808080;
+border-radius: 10px;
+position: absolute;
+top: 100px;
+right: 820px;
+text-align: center
+}
+input.MyButtonTeachingMentorship:hover {
+color: #000;
+background: ;
+border: 1px solid #808080;
+border-radius: 10px
+}
+
+input.MyButtonProfessionalDevelopment {
+width: 250px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #808080;
+color: #fff;
+border: 1px solid #808080;
+border-radius: 10px;
+position: absolute;
+top: 100px;
+right: 520px;
+text-align: center
+}
+input.MyButtonProfessionalDevelopment:hover {
+color: #000;
+background: ;
+border: 1px solid #808080;
+border-radius: 10px
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.box1 {
+  height: 1400px;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 0px 0px 150px 0px;
+}
+
+
+.teachingstatement {
+  position: relative;
+  top: 50px;
+  left: 200px;
+  text-align: left;
+  height: 60px;
+  width: 760px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 200%;
+}
+
+.teachingstatementtext {
+  position: relative;
+  top: 50px;
+  left: 200px;
+  text-align: left;
+  height: 350px;
+  width: 1000px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 130%;
+  z-index: ;
+}
+
+.indent {
+  Text-indent: 50px;
+}
+
+
+.box2 {
+  height: 10px;
+  width: 100%;
+  background: #ededed;
+  padding: 100px 0px 0px 0px;
+}
+
+.recentnews {
+  position: relative;
+  top: 20px;
+  left: 82px;
+  text-align: center;
+  height: 60px;
+  width: 340px;
+  background: #ededed;
+  color: #000;
+  font-size: 250%;
+}
+
+.recentnews1 {
+  position: relative;
+  top: -40px;
+  left: 600px;
+  text-align: left;
+  height: 110px;
+  width: 750px;
+  background: #ededed;
+  color: #000;
+  font-size: 100%;
+}
+
+.recentnewspic {
+  position: relative;
+  top: -120px;
+  left: 1000px;
+}
+
+.box3 {
+  height: 350px;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 100px 0px 150px 0px;
+}
+
+
+.upcomingtalks {
+  position: relative;
+  top: 20px;
+  left: 82px;
+  text-align: center;
+  height: 60px;
+  width: 340px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 250%;
+}
+
+.upcomingtalk1 {
+  position: relative;
+  top: -40px;
+  left: 600px;
+  text-align: left;
+  height: 110px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 100%;
+}
+
+.upcomingtalkcalendar {
+  position: relative;
+  top: -108px;
+  left: 650px;
+}
+
+.upcomingtalk2 {
+  position: relative;
+  top: 0px;
+  left: 600px;
+  text-align: left;
+  height: 110px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 100%;
+}
+
+.upcomingtalk3 {
+  position: relative;
+  top: 40px;
+  left: 600px;
+  text-align: left;
+  height: 110px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 100%;
+}
+
+.box4 {
+  height: 350px;
+  width: 100%;
+  background: #ededed;
+  padding: 100px 0px 150px 0px;
+}
+
+
+.recentpublications {
+  position: relative;
+  top: 20px;
+  left: 82px;
+  text-align: center;
+  height: 90px;
+  width: 340px;
+  background: #ededed;
+  color: #000;
+  font-size: 250%;
+}
+
+.recentpublication1 {
+  position: relative;
+  top: -70px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #ededed;
+  color: #000;
+  font-size: 125%;
+}
+
+.recentpublication2 {
+  position: relative;
+  top: -40px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #ededed;
+  color: #000;
+  font-size: 100%;
+}
+
+.recentpublication3 {
+  position: relative;
+  top: -10px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #ededed;
+  color: #000;
+  font-size: 100%;
+}
+
+
+.box5 {
+  height: 200px;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 100px 0px 150px 0px;
+}
+
+.contact {
+  position: relative;
+  top: 20px;
+  left: 82px;
+  text-align: center;
+  height: 90px;
+  width: 340px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 250%;
+}
+
+.contact1 {
+  position: relative;
+  top: -70px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 125%;
+}
+
+.contact2 {
+  position: relative;
+  top: -40px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 125%;
+}
+
+.contact3 {
+  position: relative;
+  top: -10px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 100%;
+}
+
+</style>
+</head>
+
+<!-- ______________________________________________ -->
+<title>Teaching Portfolio</title>
+<body>
+
+<a id="top">
+</a>
+<ul id="navBar1">
+<h2>
+<div class="toprow">
+  <input class="MyButtonName" type="button" value="WILLIAM T MILLS IV" onclick="window.location.href='index.html'" />
+
+  <input class="MyButtonTeachingPortfolio" type="button" value="Teaching Portfolio" onclick="window.location.href='teachingportfolio.html'" />
+</div>
+<div class="bottomrow">
+  <input class="MyButtonTeachingStatement" type="button" value="Teaching Statement" onclick="window.location.href='teachingportfolio.html'" />
+  <input class="MyButtonTeachingMentorship" type="button" value="Teaching & Mentorship" onclick="window.location.href='teachingmentorship.html'" />
+  <input class="MyButtonProfessionalDevelopment" type="button" value="Professional Development" onclick="window.location.href='professionaldevelopment.html'" />
+</div>
+</h2>
+</ul>
+
+<div class="box1">
+<div class="teachingstatement">
+<strong>Teaching Statement</strong></br>
+</div>
+<div class="teachingstatementtext">
+<div class="indent">
+	Throughout my undergraduate and graduate training, I have had the opportunity to teach students in various contexts including as a tutor, advisor, peer teacher, evaluator and mentor. My time in these roles has helped me develop a teaching strategy centered around problem-based learning and hands-on application. Additionally, my teaching strategy incorporates approaches for effectively engaging students with varying learning experiences and educational backgrounds. My teaching experiences and the strategies I have developed from them are well suited for undergraduate STEM education that seeks to prepare students to use their scientific knowledge to solve problems throughout all of society.
+</br></br>
+</div>
+<strong>Tutoring</strong></br>
+<div class="indent">
+As an undergraduate, I volunteered as a tutor in the Advancement via Individual Determination (AVID) program at Albemarle High School in Charlottesville, VA. This program’s goal is to help students from underrepresented backgrounds in higher education by offering them an elective course in which they receive academic, social and emotional support to help them thrive in their most challenging classes. This experience gave me the experience and tools necessary for developing teaching strategies that serve students from diverse academic and social backgrounds.
+</br></br>
+</div>
+<strong>Advising</strong></br>
+<div class="indent">
+In college I felt that my faculty advisor, though very knowledgeable about degree requirements, wasn’t able to advise me in other areas of student life such as finding housing or getting involved in extracurricular activities. To address this problem, I volunteered as a peer advisor in the inaugural year of the University Peer Advising Link, a program which sought to supplement new student advising from a faculty advisor with peer advising from a fellow student in their major. My commitment to developing my school’s community was recognized by the University of Virginia Parents Fund who awarded me the Gilbert J. Sullivan Scholarship in my 3rd and 4th years of study.
+</br></br>
+</div>
+<strong>Teaching</strong></br>
+<div class="indent">
+The most impactful course I took as an undergraduate was an introductory biology laboratory course in which we isolated our own DNA and studied how genetics underlies eye color, the ability to taste certain substances and how similar human genes are to those of a plant. The use of problem-based learning in this course was incredibly effective at improving my ability to retain the information I learned in the course and apply it in various different contexts. My appreciation for this course inspired me to twice volunteer as a peer teacher. As a peer teacher, I continued to utilize these problem-based learning styles and have incorporated them into the teaching strategies that I will use in my future as an undergraduate STEM educator.
+</br></br>
+</div>
+<strong>Evaluating</strong></br>
+<div class="indent">
+As a graduate student I have had the opportunity to serve as a judge for an undergraduate poster session with students from Stevenson University (Maryland). In this role I gained experience probing students’ understanding, evaluating student performance using a rubric and providing constructive feedback. I have used this experience to develop learning evaluation practices that effectively gauge functional understanding of scientific principles.
+</br></br>
+</div>
+<strong>Mentoring</strong></br>
+<div class="indent">
+The aspect of my undergraduate research mentor’s mentorship style that stuck with me most was his emphasis on understanding the “how” of every experiment. Rather than breezing through pre-made reaction kits, my mentor stressed the importance of understanding how each step in an experiment worked. This idea was transformational in my scientific research training and launched me on my current academic trajectory. Later in my undergraduate training and as a graduate student, I had the opportunity to mentor my own students in a biological laboratory setting. Incorporating the strategies used by my own inspirational mentor, I was able to teach students general lab practices, advise them on their own projects and help guide them on their academic paths. These experiences have prepared me well to be an effective mentor for undergraduates in STEM training programs.
+</br></br>
+</div>
+<div class="indent">
+Each of the experiences described above has helped me develop different aspects of my teaching strategy from evaluating student learning to serving underrepresented groups. These experiences have prepared me well for a career in advancing undergraduate STEM education.
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+<div class="box2">
+
+</div>
+
+</body>
+</html>
