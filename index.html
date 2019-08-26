@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=500, initial-scale=0.01">
+<style>
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+a:visited {color: blue}
+
+
+#navBar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #3366cc;
+  z-index: 999;
+}
+
+#navBar>li {
+  float: right;
+  position: relative;
+  right: 50px;
+}
+
+#navBar a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Georgia;
+  color: white;
+  background-color: #3366cc;
+}
+
+
+
+input.MyButtonName {
+width: 300px;
+padding: 10px;
+font-weight: bold;
+font-size: 110%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+position: absolute;
+top: 15px;
+left: 16px;
+}
+input.MyButtonName:hover {
+color: #000;
+background: ;
+border: 1px solid #3366cc;
+border-radius: 10px;
+}
+
+input.MyButtonRecentNews {
+width: 220px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+position: absolute;
+top: 20px;
+right: 790px;
+}
+input.MyButtonRecentNews:hover {
+color: #000;
+background: ;
+border: 1px solid #3366cc;
+border-radius: 10px;
+}
+
+input.MyButtonUpcomingTalks {
+width: 210px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+position: absolute;
+top: 20px;
+right: 630px;
+}
+input.MyButtonUpcomingTalks:hover {
+color: #000;
+background: ;
+border: 1px solid #3366cc;
+border-radius: 10px;
+}
+
+input.MyButtonRecentPublications {
+width: 200px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+position: absolute;
+top: 20px;
+right: 440px;
+}
+input.MyButtonRecentPublications:hover {
+color: #000;
+background: ;
+border: 1px solid #3366cc;
+border-radius: 10px;
+}
+
+input.MyButtonTeachingPortfolio {
+width: 200px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+position: absolute;
+top: 20px;
+right: 230px;
+}
+input.MyButtonTeachingPortfolio:hover {
+color: #000;
+background: ;
+border: 1px solid #3366cc;
+border-radius: 10px;
+}
+
+input.MyButtonCV {
+width: 90px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+position: absolute;
+top: 20px;
+right: 130px;
+}
+input.MyButtonCV:hover {
+color: #000;
+background: ;
+border: 1px solid #3366cc;
+border-radius: 10px;
+}
+
+input.MyButtonContact {
+width: 130px;
+padding: 10px;
+font-weight: ;
+font-size: 80%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+position: absolute;
+top: 20px;
+right: 0px;
+}
+input.MyButtonContact:hover {
+color: #000;
+background: ;
+border: 1px solid #3366cc;
+border-radius: 10px
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsbox {
+  height: 100px;
+  width: 100%;
+  background: #000000;
+  padding: 0px 0px 150px 0px;
+}
+
+.news {
+  position: relative;
+  top: 50px;
+  left: 82px;
+  text-align: left;
+  height: 60px;
+  width: 340px;
+  background: #000000;
+  color: #FFFFFF;
+  font-size: 250%;
+}
+
+.newstext {
+  position: relative;
+  top: -10px;
+  left: 300px;
+  text-align: left;
+  height: 60px;
+  width: 800px;
+  background: #000000;
+  color: #FFFFFF;
+  font-size: 150%;
+}
+
+.newspic {
+  position: relative;
+  top: -80px;
+  left: 1000px;
+}
+
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.box1 {
+  height: 475px;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 0px 0px 150px 0px;
+}
+
+.headshot {
+  position: relative;
+  top: 60px;
+  left: 150px;
+}
+
+.mainpic {
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.googlescholar {
+  position: relative;
+  top: -110px;
+  left: 40px;
+}
+
+.googlescholaredge {
+  border-radius: 10%;
+}
+
+.researchgate {
+  position: relative;
+  top: -110px;
+  left: 40px;
+}
+
+.researchgateedge {
+  border-radius: 10%;
+}
+
+.linkedin {
+  position: relative;
+  top: -110px;
+  left: 40px;
+}
+
+.linkedinedge {
+  border-radius: 10%;
+}
+
+.name {
+  position: relative;
+  top: -515px;
+  left: 82px;
+  text-align: center;
+  height: 60px;
+  width: 340px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 250%;
+}
+
+.currentposition {
+  position: relative;
+  top: -515px;
+  left: 82px;
+  text-align: center;
+  height: 60px;
+  width: 340px;
+  background: #FFFFFF;
+  color: #909090;
+  font-size: 175%;
+}
+
+.department {
+  position: relative;
+  top: -515px;
+  left: 82px;
+  text-align: center;
+  height: 75px;
+  width: 340px;
+  background: #FFFFFF;
+  color: #909090;
+  font-size: 175%;
+}
+
+.school {
+  position: relative;
+  top: -515px;
+  left: 82px;
+  text-align: center;
+  height: 70px;
+  width: 340px;
+  background: #FFFFFF;
+  color: #909090;
+  font-size: 175%;
+}
+
+.aboutme {
+  position: relative;
+  top: -120px;
+  left: 500px;
+  text-align: left;
+  height: 60px;
+  width: 760px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 200%;
+}
+
+.aboutmetext {
+  position: relative;
+  top: -120px;
+  left: 500px;
+  text-align: left;
+  height: 350px;
+  width: 760px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 130%;
+  z-index: ;
+}
+
+.agoclip {
+  position: relative;
+  top: -450px;
+  left: 960px;
+  text-align: left;
+  height: 60px;
+  width: 760px;
+}
+
+.box2 {
+  height: 350px;
+  width: 100%;
+  background: #ededed;
+  padding: 100px 0px 150px 0px;
+}
+
+.recentnews {
+  position: relative;
+  top: 20px;
+  left: 82px;
+  text-align: center;
+  height: 60px;
+  width: 340px;
+  background: #ededed;
+  color: #000;
+  font-size: 250%;
+}
+
+.recentnews1 {
+  position: relative;
+  top: -40px;
+  left: 600px;
+  text-align: left;
+  height: 110px;
+  width: 750px;
+  background: #ededed;
+  color: #000;
+  font-size: 100%;
+}
+
+.recentnews2 {
+  position: relative;
+  top: -240px;
+  left: 600px;
+  text-align: left;
+  height: 110px;
+  width: 750px;
+  background: #ededed;
+  color: #000;
+  font-size: 100%;
+}
+
+.recentnewspic1 {
+  position: relative;
+  top: -140px;
+  left: 1000px;
+}
+
+.recentnewspic2 {
+  position: relative;
+  top: -160px;
+  left: 1100px;
+}
+
+.recentnewspic3 {
+  position: relative;
+  top: -345px;
+  left: 1200px;
+}
+
+.recentnewspic4 {
+  position: relative;
+  top: -320px;
+  left: 1000px;
+}
+
+.box3 {
+  height: 350px;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 100px 0px 150px 0px;
+}
+
+
+.upcomingtalks {
+  position: relative;
+  top: 20px;
+  left: 82px;
+  text-align: center;
+  height: 60px;
+  width: 340px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 250%;
+}
+
+.upcomingtalk1 {
+  position: relative;
+  top: -40px;
+  left: 600px;
+  text-align: left;
+  height: 110px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 100%;
+}
+
+.upcomingtalkcalendar {
+  position: relative;
+  top: -108px;
+  left: 650px;
+}
+
+.upcomingtalk2 {
+  position: relative;
+  top: 0px;
+  left: 600px;
+  text-align: left;
+  height: 110px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 100%;
+}
+
+.upcomingtalk3 {
+  position: relative;
+  top: 40px;
+  left: 600px;
+  text-align: left;
+  height: 110px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 100%;
+}
+
+.box4 {
+  height: 350px;
+  width: 100%;
+  background: #ededed;
+  padding: 100px 0px 150px 0px;
+}
+
+
+.recentpublications {
+  position: relative;
+  top: 20px;
+  left: 82px;
+  text-align: center;
+  height: 90px;
+  width: 340px;
+  background: #ededed;
+  color: #000;
+  font-size: 250%;
+}
+
+.recentpublication1 {
+  position: relative;
+  top: -70px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #ededed;
+  color: #000;
+  font-size: 125%;
+}
+
+.recentpublication2 {
+  position: relative;
+  top: -40px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #ededed;
+  color: #000;
+  font-size: 100%;
+}
+
+.recentpublication3 {
+  position: relative;
+  top: -10px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #ededed;
+  color: #000;
+  font-size: 100%;
+}
+
+
+.box5 {
+  height: 200px;
+  width: 100%;
+  background: #FFFFFF;
+  padding: 100px 0px 150px 0px;
+}
+
+.contact {
+  position: relative;
+  top: 20px;
+  left: 82px;
+  text-align: center;
+  height: 90px;
+  width: 340px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 250%;
+}
+
+.contact1 {
+  position: relative;
+  top: -70px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 125%;
+}
+
+.contact2 {
+  position: relative;
+  top: -40px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 125%;
+}
+
+.contact3 {
+  position: relative;
+  top: -10px;
+  left: 600px;
+  text-align: left;
+  height: 80px;
+  width: 750px;
+  background: #FFFFFF;
+  color: #000;
+  font-size: 100%;
+}
+
+</style>
+</head>
+
+<!-- ______________________________________________ -->
+<title>William T Mills IV</title>
+<body>
+
+<a id="top">
+</a>
+<ul id="navBar">
+<h2>
+  <input class="MyButtonName" type="button" value="WILLIAM T MILLS IV" onclick="window.location.href='#top'" />
+
+  <input class="MyButtonRecentNews" type="button" value="Recent News" onclick="window.location.href='#recentnews'" />
+
+  <input class="MyButtonUpcomingTalks" type="button" value="Upcoming Talks" onclick="window.location.href='#upcomingtalks'" />
+
+  <input class="MyButtonRecentPublications" type="button" value="Recent Publications" onclick="window.location.href='#recentpublications'" />
+
+  <input class="MyButtonTeachingPortfolio" type="button" value="Teaching Portfolio" onclick="window.location.href='teachingportfolio.html'" />
+
+  <input class="MyButtonCV" type="button" value="CV" onclick="window.open('CV.html')" />
+
+  <input class="MyButtonContact" type="button" value="Contact" onclick="window.location.href='#contact'" />
+
+</h2>
+</ul>
+
+<!--
+<div class="newsbox">
+<div class="news">
+NEWS
+</div>
+<div class="newstext">
+<strong>May 9, 2019</strong></br></br>
+Billy received the Junghea Park Memorial Award for</br> earning 1st place amongst 1st and 2nd year graduate</br> students at the Graduate Student Association (GSA)</br> Poster Symposium!
+</div>
+<div class="newspic">
+<img src="images/GSA_PS_2019.jpg" class="rotateimg90" width="224" height="168" alt="GSA Poster Symposium 1st Place" />
+</div>
+</div>
+-->
+
+<div class="box1">
+<div class="headshot">
+<img src="images/headshot.JPG" class="mainpic" width="200" height="200" alt="William T Mills IV" id="pic" />
+</div>
+<div class="googlescholar">
+<a href="https://scholar.google.com/citations?user=q8eaJbEAAAAJ&hl=en" target="_blank">
+<img src="images/GoogleScholar.png" class="googlescholaredge" width="40" height="40" alt="Google Scholar" id="pic" />
+</a>
+</div>
+<div class="researchgate">
+<a href="https://www.researchgate.net/profile/William_Mills_Iv" target="_blank">
+<img src="images/ResearchGate.png" class="researchgateedge" width="40" height="40" alt="Research Gate" id="pic" />
+</a>
+</div>
+<div class="linkedin">
+<a href="https://www.linkedin.com/in/williamtmillsiv/" target="_blank">
+<img src="images/LinkedIn.png" class="linkedinedge"width="40" height="40" alt="LinkedIn" id="pic" />
+</a>
+<div class="aboutme">
+<strong>About Me</strong></br>
+</div>
+<div class="aboutmetext">
+I am a 3rd year PhD candidate in the Department of Biological Chemistry at the Johns Hopkins University School of Medicine. My dissertation research in the lab of <a href="https://www.hopkinsmedicine.org/profiles/results/directory/profile/4814424/mollie-meffert" target="_blank">Dr. Mollie K Meffert</a> examines how miRNAs mediate post-transcriptional gene regulation in the mammalian central nervous system. I use a method called Argonaute cross-linking and immunoprecipitation (Ago-CLIP) to study</br> the interactions between miRNAs and target RNAs within the</br> RNA-induced silencing complex. A technique developed</br> by several labs now makes it possible to directly</br> ligate miRNAs with their targets, which allows</br> for the unambiguous mapping of miRNA-target</br> interactions. I hope to use this technique to map</br> the miRNA-target network in the brain of a</br> mouse model of autism and also within various</br> populations of neurons in the mouse brain.
+</div>
+<div class="agoclip">
+<img src="images/Ago-CLIP.png" width="459" height="500" alt="CLEAR-CLIP" id="pic" />
+</a>
+</div>
+</div>
+
+<div class="name">
+William T Mills IV
+</div>
+
+<div class="currentposition">
+PhD Candidate
+</div>
+
+<div class="department">
+<a href="http://biolchem.bs.jhmi.edu/Pages/default.aspx" target="_blank">Department of Biological Chemistry</a>
+</div>
+
+<div class="school">
+<a href="https://www.hopkinsmedicine.org/som/index.html" target="_blank">Johns Hopkins University School of Medicine</a>
+</div>
+
+</div>
+
+<a id="recentnews">
+
+<div class="box2">
+<div class="recentnews">
+Recent News
+</div>
+
+<div class="recentnews1">
+<strong>Thursday, May 31, 2019</strong></br></br>
+Billy recently presented his work during the Student</br> Research Rounds at the 2019 Johns Hopkins</br> University School of Medicine Alumni Weekend!</div>
+<div class="recentnewspic1">
+<img src="images/JHU-2121.jpg" width="150" height="100" alt="Student Research Rounds 1" />
+</div>
+<div class="recentnewspic2">
+<img src="images/JHU-2126.jpg" width="150" height="100" alt="Student Research Rounds 1" />
+</div>
+<div class="recentnewspic3">
+<img src="images/JHU-2143.jpg" width="150" height="100" alt="Student Research Rounds 1" />
+</div>
+
+
+<div class="recentnews2">
+<strong>Thursday, May 9, 2019</strong></br></br>
+Billy received the Junghea Park Memorial Award for</br> earning 1st place amongst 1st and 2nd year graduate</br> students at the Graduate Student Association (GSA)</br> Poster Symposium!
+</div>
+<div class="recentnewspic4">
+<img src="images/GSA_PS_2019.jpg" class="rotateimg90" width="224" height="168" alt="GSA Poster Symposium 1st Place" />
+</div>
+</div>
+</div>
+</a>
+
+
+
+<a id="upcomingtalks">
+
+<div class="box3">
+<div class="upcomingtalks">
+Upcoming Talks
+</div>
+
+<div class="upcomingtalk1">
+<strong>Friday, September 13, 2019</strong></br>
+Poster Presentation</br>
+Department of Biological Chemistry Annual Retreat</br>
+Mt. Washington Conference Center</br>
+Baltimore, MD</br>
+8:00am - 5:00pm
+<div class="upcomingtalkcalendar">
+<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MmoxdjI2ZzVzNWdqMHVsYTZidGtpOWVzYm4gcjRiczM0c2RrODQxZGkzaTRjdWJmYmV1bDRAZw&amp;tmsrc=r4bs34sdk841di3i4cubfbeul4%40group.calendar.google.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+</div>
+</div>
+
+<div class="upcomingtalk2">
+<strong>Sunday, October 6, 2019</strong></br>
+Poster Presentation</br>
+Biochemistry, Cellular and Molecular Biology Graduate Program Annual Retreat</br>
+Hyatt Regency Chesapeake Bay Golf Resort, Spa and Marina</br>
+Cambridge, MD</br>
+4:00pm - 6:00pm
+<div class="upcomingtalkcalendar">
+<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NHNqMXBjdWwwcGpuZGVjMTAybm1uMHQ1cmggd2lsbGlhbXRtaWxsc0Bt&amp;tmsrc=williamtmills%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+</div>
+</div>
+
+</div>
+</a>
+
+<a id="recentpublications">
+<div class="box4">
+<div class="recentpublications">
+Recent Publications
+</div>
+<div class="recentpublication1">
+Oldach LM, Gorshkov K, <strong>Mills WT, IV</strong>, Zhang J, and Meffert MK (2018). A biosensor for MAPK-dependent Lin28 signaling. <i>Mol Biol Cell</i>, 29(10): 1157-1167.<br />
+DOI: <a href="http://www.molbiolcell.org/doi/10.1091/mbc.E17-08-0500" target="_blank">10.1091/mbc.E17-08-0500</a>
+</div>
+
+<div class="recentpublication2">
+
+</div>
+
+
+<div class="recentpublication3">
+
+</div>
+
+</div>
+</a>
+
+
+<a id="contact">
+<div class="box5">
+<div class="contact">
+Contact
+</div>
+
+<div class="contact1">
+Johns Hopkins University School of Medicine</br>
+725 North Wolfe Street</br>
+<strong>Lab:</strong> Physiology Building Room 413</br>
+Baltimore, MD, 21205
+</div>
+<div class="contact2">
+Email: <a class="email" href="mailto:william.mills@jhmi.edu"> william.mills@jhmi.edu </a>
+</div>
+<!--
+<div class="contact3">
+
+</div>
+-->
+</div>
+</a>
+
+</body>
+</html>
